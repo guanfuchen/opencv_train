@@ -13,7 +13,7 @@ inline bool exists_file (const std::string& name) {
 
 int main(int argc, char** argv )
 {
-    string image_path = "../../data/lena.jpg";
+    string image_path = "./data/lena.jpg";
     if ( argc != 2 )
     {
         printf("usage: DisplayImage.out <Image_Path>\n");
