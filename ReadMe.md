@@ -41,6 +41,15 @@ HSV颜色空间为亮度、饱和度和对比度，可以用来捕捉某些特�
 介绍OpenCV中常用视频操作，包括read帧，write帧等，实现可参考[VideoOperate](./python/notebook/VideoOperate.ipynb)。
 
 ---
+## Canny边缘检测
+
+Canny边缘检测是一种非常流行的边缘检测算法，是John在1986年提出的，实现可参考[CannyDetection](./python/notebook/CannyDetection.ipynb)
+
+---
+## 图像金字塔
+一般情况下，我们要处理一副具有固定分辨率的图像，但是在有些情况下，我们需要对同一图像的不同分辨率的子图像进行处理。比如，我们要在一副图像中查找某个目标，比如脸，我们不知道目标在图像中的尺寸大小。这种情况下，我们需要创建一组图像，这些图像是具有不同分辨率的原始图像，这些图像构成了图像金字塔（同一图像的不同分辨率的子图集合），实现可参考[Pyramid](./python/notebook/Pyramid.ipynb)。
+
+---
 ## 参考资料
 
 [CAP 5415 - Computer Vision](http://crcv.ucf.edu/courses/CAP5415/Fall2012/) 按照公开课学习。
