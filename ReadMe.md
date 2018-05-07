@@ -66,6 +66,24 @@ Canny边缘检测是一种非常流行的边缘检测算法，是John在1986年�
 $$E(u,v)=\sum_{x,y}{w(x,y)[I(x+u, y+v)-I(x,y)]^2}$$
 
 ---
+## SIFT特征提取
+介绍SIFT特征提取。
+
+---
+## 常用函数
+
+### RGB2BGR
+
+```python
+def bgr_to_rgb(bgr):
+    rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
+    return rgb
+def rgb_to_bgr(rgb):
+    bgr = cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
+    return bgr
+```
+
+---
 ## 参考资料
 
 [CAP 5415 - Computer Vision](http://crcv.ucf.edu/courses/CAP5415/Fall2012/) 按照公开课学习。
