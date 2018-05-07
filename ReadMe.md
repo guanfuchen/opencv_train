@@ -43,11 +43,27 @@ HSV颜色空间为亮度、饱和度和对比度，可以用来捕捉某些特�
 ---
 ## Canny边缘检测
 
-Canny边缘检测是一种非常流行的边缘检测算法，是John在1986年提出的，实现可参考[CannyDetection](./python/notebook/CannyDetection.ipynb)
+Canny边缘检测是一种非常流行的边缘检测算法，是John在1986年提出的，实现可参考[CannyDetection](./python/notebook/CannyDetection.ipynb)，使用numpy对每一步进行了实现。
+
+[Wasnik_01_01.ipynb](https://github.com/ranriy/Canny-Edge-Detector/blob/master/Wasnik_01_01.ipynb)
+
+[Canny边缘检测算法的实现](https://www.cnblogs.com/mightycode/p/6394810.html)
+
+[Canny算法 边缘检测](http://www.cnblogs.com/Black-Small/p/3258463.html)
 
 ---
 ## 图像金字塔
 一般情况下，我们要处理一副具有固定分辨率的图像，但是在有些情况下，我们需要对同一图像的不同分辨率的子图像进行处理。比如，我们要在一副图像中查找某个目标，比如脸，我们不知道目标在图像中的尺寸大小。这种情况下，我们需要创建一组图像，这些图像是具有不同分辨率的原始图像，这些图像构成了图像金字塔（同一图像的不同分辨率的子图集合），实现可参考[Pyramid](./python/notebook/Pyramid.ipynb)。
+
+
+---
+## 图像特征与描述
+角点corner是一个好的图像特征。找到图像特征的技术被称为特征检测。特征匹配使用特征描述。
+
+---
+## Harris角点检测
+角点特性：像任何方向移动变化都很大。其中Harris角点是Harris和Mike在1988年提出的，他将这个特性转换为数学形式，即窗口想各个方向移动(u,v)然后计算所有差异的总和，公式如下：
+$$E(u,v)=\sum_{x,y}{w(x,y)[I(x+u, y+v)-I(x,y)]^2}$$
 
 ---
 ## 参考资料
