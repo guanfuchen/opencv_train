@@ -84,6 +84,48 @@ def rgb_to_bgr(rgb):
 ```
 
 ---
+# 常用算法详解
+
+---
+## HOG
+增加HOG详解。
+
+---
+## 光流算法
+增加光流相关算法。
+
+---
+## 角点检测的FAST算法
+增加角点检测的FAST算法。
+
+---
+# 常用函数
+
+---
+## 计算梯度$g_x$和$g_y$的幅值和方向
+
+$$g=\sqrt{g_x^2+g_y^2}$$
+$$\theta=\arctan{\frac{g_y}{g_x}}$$
+
+```python
+# Python gradient calculation
+# Read image
+im = cv2.imread('lena.jpg')
+im = np.float32(im) / 255.0
+# Calculate gradient
+gx = cv2.Sobel(img, cv2.CV_32F, 1, 0, ksize=1)
+gy = cv2.Sobel(img, cv2.CV_32F, 0, 1, ksize=1)
+# Python Calculate gradient magnitude and direction ( in degrees )
+mag, angle = cv2.cartToPolar(gx, gy, angleInDegrees=True)
+```
+
+[Histogram of Oriented Gradients](https://www.learnopencv.com/histogram-of-oriented-gradients/)
+
+---
 ## 参考资料
 
 [CAP 5415 - Computer Vision](http://crcv.ucf.edu/courses/CAP5415/Fall2012/) 按照公开课学习。
+
+[OpenCV-Python-Tutorial](https://github.com/makelove/OpenCV-Python-Tutorial) 该仓库是OpenCV-Python代码，其中有大量开源代码和示例数据。
+
+[opencv python2 samples](https://github.com/opencv/opencv/tree/master/samples/python) opencv仓库中python相关示例。
