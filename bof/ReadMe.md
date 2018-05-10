@@ -13,3 +13,5 @@ bag of features应用在图像分类上，表现为检测特征点、计算描�
 ## 参考资料
 
 [经典论文学习bag of feature（二）](https://www.cnblogs.com/oudan/p/4169021.html)
+
+[bag-of-words](https://github.com/bikz05/bag-of-words) 代码主要参考这个仓库。
