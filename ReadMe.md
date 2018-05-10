@@ -41,6 +41,10 @@ HSV颜色空间为亮度、饱和度和对比度，可以用来捕捉某些特�
 介绍OpenCV中常用视频操作，包括read帧，write帧等，实现可参考[VideoOperate](./python/notebook/VideoOperate.ipynb)。
 
 ---
+## 霍夫变换
+介绍霍夫变换在直线、圆检测上的原理和应用，实现可参考[hough_transform](./hough_transform/hough_transform.ipynb)。
+
+---
 ## Canny边缘检测
 
 Canny边缘检测是一种非常流行的边缘检测算法，是John在1986年提出的，实现可参考[CannyDetection](./python/notebook/CannyDetection.ipynb)，使用numpy对每一步进行了实现。
@@ -141,3 +145,5 @@ mag, angle = cv2.cartToPolar(gx, gy, angleInDegrees=True)
 [OpenCV-Python-Tutorial](https://github.com/makelove/OpenCV-Python-Tutorial) 该仓库是OpenCV-Python代码，其中有大量开源代码和示例数据。
 
 [opencv python2 samples](https://github.com/opencv/opencv/tree/master/samples/python) opencv仓库中python相关示例。
+
+[ComputerVision github](https://github.com/hsmyy/ComputerVision) 作者也是基于大量的代码结合公式进行分类。
