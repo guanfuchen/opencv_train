@@ -78,6 +78,10 @@ $$E(u,v)=\sum_{x,y}{w(x,y)[I(x+u, y+v)-I(x,y)]^2}$$
 [双线性插值(Bilinear Interpolation)](http://www.cnblogs.com/xpvincent/archive/2013/03/15/2961448.html)
 
 ---
+## BOF词袋模型
+增加bag of feature词袋模型。
+
+---
 ## 常用函数
 
 ### RGB2BGR
