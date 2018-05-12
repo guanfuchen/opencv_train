@@ -25,6 +25,10 @@ HSV颜色空间为亮度、饱和度和对比度，可以用来捕捉某些特�
 介绍中值滤波、双线性滤波、高斯滤波等常用图像滤波算法，实现可参考[ImageFilter](./python/notebook/ImageFilter.ipynb)。
 
 ---
+## 阈值化操作
+增加阈值化介绍，包括简单阈值和自适应阈值。
+
+---
 ## 图像算术
 介绍常用图像算术操作，包括add、sub等，实现可参考[ImageOperate](./python/notebook/ImageOperate.ipynb)。
 
