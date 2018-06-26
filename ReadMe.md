@@ -95,6 +95,7 @@ $$E(u,v)=\sum_{x,y}{w(x,y)[I(x+u, y+v)-I(x,y)]^2}$$
 ### RGB2BGR
 
 ```python
+import cv2
 def bgr_to_rgb(bgr):
     rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
     return rgb
@@ -116,7 +117,7 @@ def rgb_to_bgr(rgb):
 
 ---
 ## LBP
-增加LBP描述子详解。
+增加LBP描述子详解，实现理解相关资料参考[lbp](./lbp/ReadMe.md)。
 
 ---
 ## 光流算法
@@ -138,16 +139,23 @@ $$\theta=\arctan{\frac{g_y}{g_x}}$$
 ```python
 # Python gradient calculation
 # Read image
+import cv2
+import numpy as np
 im = cv2.imread('lena.jpg')
 im = np.float32(im) / 255.0
 # Calculate gradient
-gx = cv2.Sobel(img, cv2.CV_32F, 1, 0, ksize=1)
-gy = cv2.Sobel(img, cv2.CV_32F, 0, 1, ksize=1)
+gx = cv2.Sobel(im, cv2.CV_32F, 1, 0, ksize=1)
+gy = cv2.Sobel(im, cv2.CV_32F, 0, 1, ksize=1)
 # Python Calculate gradient magnitude and direction ( in degrees )
 mag, angle = cv2.cartToPolar(gx, gy, angleInDegrees=True)
 ```
 
 [Histogram of Oriented Gradients](https://www.learnopencv.com/histogram-of-oriented-gradients/)
+
+---
+# 源码分析
+
+增加源码分析，参考[OpenCV源码分析](./source_analyse)
 
 ---
 ## 参考资料
